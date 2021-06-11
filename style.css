@@ -21,21 +21,35 @@
 }
 
 .fondo2 > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     border-style: ridge;
     border-width: 15px;
     border-color: brown;
 }
 
 
-.fondo2 > figure {
-    border-style: dotted;
-    border-color: rgb(129, 91, 8);
-    border-width: 5px;
-    padding: 20px;
+.figure1 {
+    display: flex;
+    align-items: center;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(140, 211, 10);
+}
+.figure1 > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
-.homer {
+.fondoAllBeers {
+    background-color: rgb(201, 212, 41);
+}
+
+.beer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
