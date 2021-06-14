@@ -31,7 +31,7 @@ function getData(e){
             //first_brewed (primera aparación de la cerveza)
             const firstBrewed = data[0].first_brewed
 
-            randomBeer.innerHTML = name + ' ' + '<=>' + firstBrewed + ' ' + '<=>' + alcohol + '%'
+            randomBeer.innerHTML = name +  '    ' + firstBrewed + '    ' + alcohol + '%'
             descriptionDisplay.innerHTML = description
             volumeDisplay.innerHTML = volumeValue + ' ' + volumeUnit
             
