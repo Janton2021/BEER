@@ -6,6 +6,7 @@ setTimeout(function () {
   const x = getRandomInRange(-90, 90, 5);
   const y = getRandomInRange(-90, 90, 5);
   var map = L.map("mapid").setView([x, y], 6);
+  let MAPBOX_TOKEN = 'pk.eyJ1IjoiamFudG9uMTk4MCIsImEiOiJja3BzaXd4Mm8wNHF4MnZwaWNydGNjZHdhIn0.duWzFaJJS05KjayajI9bWQ'
   L.tileLayer(
     "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiY2ZtaWxsYW5tIiwiYSI6ImNrcHBxZDNxYzNiY3Eyd3JpaWxmdjlhbXUifQ.6i6Xjk628Wt1_4OqLdYLHw",
     {
@@ -15,8 +16,7 @@ setTimeout(function () {
       id: "mapbox/streets-v11",
       tileSize: 512,
       zoomOffset: -1,
-      accessToken:
-        "pk.eyJ1IjoiY2ZtaWxsYW5tIiwiYSI6ImNrcHBxZDNxYzNiY3Eyd3JpaWxmdjlhbXUifQ.6i6Xjk628Wt1_4OqLdYLHw",
+      accessToken: MAPBOX_TOKEN
     }
   ).addTo(map);
 
