@@ -4,7 +4,7 @@ const tableOneBeer = function (beer) {
                   <h1>${beer.name}</h1>
                   <p class="title">${beer.tagline}</p>
                   <p class="title">${beer.first_brewed}</p>
-                  <p><a href="map.html">Show Map</a></p>
+                  <p><a href="map.html">Muestrame de donde soy</a></p>
                 </div>`;
   };
 
